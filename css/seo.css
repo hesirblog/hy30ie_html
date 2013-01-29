@@ -1,0 +1,77 @@
+﻿body,div,ul,li{ padding: 0; margin: 0; list-style: none;} 
+.SEO_main{ float:left; width:760px;}
+.SEO_top{width:744px; height:376px; border:1px solid #CCC; margin-bottom:20px; padding:1px;}
+.SEO_top2{ width:740px; height:372px; border:2px solid #F1F1F1; background:#FFF; position:relative;}
+.hot{ width:25px; height:11px; background:url(../images/domain_ico2.gif) no-repeat 0 0; position:absolute; left:198px; top:-2px;}
+#SEO_tab{ height:32px; background:url(../images/domain_nav0.gif) repeat-x;}
+#SEO_tab li{ float:left; width:111px; height:14px; text-align:center; line-height:14px; margin-top:10px; border-right:1px solid #D2D2D2; cursor:pointer; }
+#SEO_tab .Mouse_out{ float:left; width:111px; height:14px; text-align:center; line-height:14px; margin-top:10px;cursor:pointer;}
+#SEO_tab .Mouse_on{ width:111px; height:21px; text-align:center; border-top:1px solid #CCC; border-right:1px solid #CCC; border-left:1px solid #CCC; margin-top:0;  padding-top:10px; font-weight:bold; background:#FFF;}
+#SEO_tab li.br0{ border-right:none;}
+.SEO_desc{ width:550px; height:20px; position:absolute; top:58px; left:85px; color:#666; font-size:12px;}
+/*关键词价格查询*/
+#SEO_con{ width:740px; height:325px; padding-top:15px; position:relative; background:url(../images/domain_check.gif) no-repeat 0 35px;}
+  .SEO_check{ width:552px; height:62px; position:absolute; left:80px; top:87px;}
+   .input_check{ width:360px; height:40px; padding:10px 0 10px 10px; _width:350px; _padding:0; _margin:10px 0 0 10px; font-size:18px; line-height:40px; font-family:Verdana,"微软雅黑"; color:#333; font-size:18px; border:none; background:none; display:block; float:left;}
+   .suf_check{ width:84px;margin-top:20px; padding-left:15px; border-left:1px dotted #666; height:25px; line-height:25px; font-size:16px; font-weight:bold; color:#333; font-family:宋体; background:url(../images/domain_ico3.gif) no-repeat 70px 8px; cursor:pointer; float:left;}
+     .btn_check{ width:80px; height:62px; border:none; background:none; cursor:pointer; display:block; float:left; }
+    .font_gray{ color:#ccc;}
+.SEO_ad{height:120px; position:absolute; left:20px; top:200px;}
+  .SEO_ad ul{ float:left;}
+    .SEO_ad h3{ background:url(../images/20121106002.gif) 0 0 no-repeat; width:207px; height:22px; padding-left:5px; line-height:22px; color:#fff; font-size:14px; font-weight:bold; font-family:宋体;}
+    .SEO_txtlist{ width:242px; margin-left:10px; margin-top:12px;}
+     .SEO_txtlist li{ background:url(../images/20121106003.gif) 8px 8px no-repeat; width:194px; height:22px; line-height:22px; padding-left:18px; font-family:宋体; color:#333;}
+.DemoUL2{ height:30px;}
+  .DemoUL2 li{ float:left; font-family:Arial;}
+    .Tab_spacing{width:2px; height:29px; border-bottom:1px #dddddd solid;} 
+    .Tab_spacing2{ width:180px;height:29px; border-bottom:1px #dddddd solid;}  
+    .DemomouseOnMenu2 {background:url(../images/20121011005.gif) 0 0 no-repeat; color:#000; width:110px; height:28px;text-align:center; font-size:14px;font-weight:bold;line-height:28px; border-top:#dddddd 1px solid; border-left:#dddddd 1px solid; border-right:#dddddd 1px solid;}
+    .DemomouseOutMenu2{width:110px; height:28px; background:url(../images/20121020022.gif) repeat-x; border:1px #dddddd solid; font-weight:bold; font-size:14px; color:#000000; line-height:28px; text-align:center;cursor:pointer;} 
+ .SEO_Demo{ width:726px;height:647px;height:689px\9;_height:715px; clear:both; border-bottom:1px #dddddd solid; border-left:1px #dddddd solid; border-right:1px #dddddd solid; padding-left:20px; padding-top:14px;}
+
+/*--------批量查询价格----------*/
+#SEO_con2{background:url(../images/20101108005.gif) 0 20px no-repeat; width:741px; height:325px;}
+.SEO_check2{ width:580px; height:100px;top:93px;left:67px; position:absolute;}
+.con2_tip{ width:310px; height:24px; line-height:24px; position:absolute; top:64px; left:68px; background:url(../images/f6.gif) right 2px no-repeat; color:#666;}
+.input_area{ width:455px; height:96px; border:0; padding:5px;}
+.btn_check2{ width:105px; height:48px; position:absolute; top:50px; left:485px; border:0; background:none; }
+.SEO_ad2{ top:230px;}
+
+ /*---------TAB--什么是SEV的内容--------*/
+#Demo1{ width:726px; height:auto; overflow:hidden;color:#383838;}
+ .Demo1_t{ width:726px; height:80px;}
+  .Demo1_t li{ float:left;}
+  .D1_l{ width:500px;}
+  .Demo1_t h3{ font-size:12px; height:35px; margin-top:10px;}
+  .D1_c{ width:726px; height:auto; overflow:hidden; margin-bottom:44px;} 
+   .D1_c h4{ height:35px;}
+  .D1_c li{ float:left; line-height:24px;}
+  .D1_ctxt{ padding-left:8px;}
+  .D1_ctxt2{ margin-top:24px; margin-bottom:34px; clear:both; line-height:24px;}
+  
+   /*---------TAB--产品原理的内容--------*/
+   .D2_c{ width:655px; height:66px; border:1px solid #d2d2d2; padding-left:23px; padding-top:11px;}
+     .D2_c li{ float:left;}
+     .D2_txt{ width:510px; line-height:24px; color:#333; padding-left:15px;}
+       .D2_txt span{ font-weight:bold; font-size:14px;}
+     .bh{ background:url(../images/20121106016.gif) 0 0 no-repeat; width:52px; height:52px; line-height:52px; text-align:center; font-family:Arial; font-size:45.2px; font-weight:bold; color:#fff;}
+   .D2_shadow{ background:url(../images/201211060018.gif) 0 0 no-repeat; background-position:right; width:678px; height:4px;}
+   .D2_arrow{ background:url(../images/201211060019.gif) 0 0 no-repeat; width:50px; height:31px; margin:auto;}
+   
+   /*---------TAB--产品优势的内容--------*/    
+ .cpys{ line-height:24px; width:600px; height:auto; overflow:hidden; margin:25px 0 25px 25px;}   
+   .cpys2{ padding-top:10px;} 
+   .cpys img{ float:left; margin-right:6px; margin-bottom:30px;}
+  /*---------TAB--展现形式的内容--------*/  
+   .zxxs{ background:url(../images/20101109001.gif) center 0 no-repeat; width:720px; height:473px; padding-top:140px; margin-top:30px;}
+    .zxxs li{ line-height:28px; width:85px;}
+     .zx_txt1{ color:#333; margin-right:540px; text-align:right;}
+     .zx_txt2{ margin-left:630px;}
+     .zx_txt3{ color:#00a0e9; margin-right:560px; margin-top:100px;}
+  /*---------TAB--荣誉资质的内容--------*/  
+
+     .Uh_t{ background:url(../images/20101110001.gif) 0 10px no-repeat; width:700px; height:35px; border-bottom:1px solid #e3e3e3; margin-bottom:10px;} 
+     .Uh_con{ width:178px; height:205px;  float:left; margin:0 20px 0 30px; _margin:0 20px 0 15px;}
+          .Uh_bg{ background:url(../images/20120927003.gif) 0 0 no-repeat; width:178px; height:150px;}
+           .Uh_des{ width:178px; line-height:20px; text-align:center;}   
+              .Uh_bg img{ margin-top:10px; margin-left:9px;}

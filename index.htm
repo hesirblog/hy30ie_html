@@ -1,0 +1,991 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>首页</title>
+	<link rel="stylesheet" href="css/global.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/bxCarousel.js"></script>
+	<script type="text/javascript" src="js/jcarousellite.js"></script>
+	<script type="text/javascript" src="js/scroll.js"></script>
+	<script type="text/javascript" src="js/jqFancyTransitions.1.8.js"></script>
+	<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        $("#MainM21Roll").bxCarousel({
+            display_num: 3,
+            move: 1,
+            auto: true,
+            controls: false,
+            auto_hover: true
+        });
+        var $inp = $("#Text1:text");
+
+        $inp.bind('keydown', function (e) {
+
+            var key = e.which;
+
+            if (key == 13) {
+                window.location.href = '/SEO/searchresult?keyword=' + escape($('#Text1').val())
+            }
+
+        });
+
+        $("#hd").jqFancyTransitions({
+            effect: 'wave', // wave, zipper, curtain
+            width: 981,
+            height: 416,
+            strips: 20, // number of strips
+            delay: 5000, // delay between images in ms
+            stripDelay: 50, // delay beetwen strips in ms
+            titleOpacity: 0.7, // opacity of title
+            titleSpeed: 1000, // speed of title appereance in ms
+            position: 'alternate', // top, bottom, alternate, curtain
+            direction: 'fountainAlternate', // left, right, alternate, random, fountain, fountainAlternate
+            navigation: true, // prev and next navigation buttons
+            links: false, // show images as links
+            data: [
+            { img: "sliders/20120911015.jpg", links: "", titles: ""},
+            { img: "sliders/20120911115.gif", links: "", titles: ""},
+            { img: "sliders/20120911215.gif", links: "", titles: ""}
+            ]
+        });
+    });
+</script>
+</head>
+<body>
+	<!-- 顶部开始 -->
+	<div id="top" class="fixed">
+		<div class="top_left">
+			<img src="images/logo.png" width="330" height="74" alt="" />
+		</div>
+		<div class="top_right">
+			<div class="snav_1">
+				<ul>
+					<li><a href="#">付款方式</a></li>
+					<li class="fenge">|</li>
+					<li><a href="#">帮助中心</a></li>
+					<li class="fenge">|</li>
+					<li><a href="#">忘记密码</a></li>
+					<li class="fenge">|</li>
+					<li><a href="#">注册</a></li>
+					<li class="fenge">|</li>
+					<li><a href="#">登录</a></li>
+				</ul>
+			</div>
+			<div class="snav_2">
+				<ul>
+					<li>
+					<img src="images/tel.jpg" width="154" height="42" alt="" />
+					</li>
+				</ul>
+				<ul class="smenu">
+					<li><a href="#">双昌在线</a></li>
+					<li><a href="#">代理加盟</a></li>
+					<li><a href="#">帮助中心</a></li>
+					<li><a href="#">付款方式</a></li>
+					<li><a href="#">官方微博</a><img src="images/t2.jpg" alt="" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部结束 -->
+	
+	<!-- 导航开始 -->
+	<div id="nav" class="fixed">
+		<ul class="naver">
+		   <li style=" margin-right:10px;"></li>
+		   <li class="home">
+			   <span class="NavL"></span>
+			   <span class="NavM"><a href="/" hidefocus="true" class="HomeBG">首页</a>
+			   </span>
+			   <span class="NavR">
+			   </span>
+		   </li>
+		   <li class="sp"></li>
+		   <li id="nav_second" class="cur">
+			  <span class="NavL"></span>
+			  <span class="NavM"><a href="#" hidefocus="true">搜索引擎优化</a></span>
+			  <span class="NavR"></span>
+		   </li>
+		   <li class="sp"></li>
+		   <li class="">
+			   <span class="NavL"></span>
+			   <span class="NavM"><a href="#" hidefocus="true">营销站点建设</a></span>
+			   <span class="NavR"></span>
+		   </li>
+		   <li class="sp"></li>
+		   <li class="">
+			   <span class="NavL"></span>
+			   <span class="NavM"><a href="#" hidefocus="true">SEO优化转入</a></span>
+			   <span class="NavR"></span>
+		   </li>
+		   <li class="sp"></li>
+		   <li class="">
+			   <span class="NavL"></span>
+			   <span class="NavM"><a href="#" hidefocus="true">成功案例</a></span>
+			   <span class="NavR"></span>
+		   </li>
+		   <li class="sp"></li>
+		   <li class="">
+			   <span class="NavL"></span>
+			   <span class="NavM"><a href="#" hidefocus="true">公司新闻</a></span>
+			   <span class="NavR"></span>
+		   </li>
+		   <li class="sp"></li>
+		   <li class="">
+			   <span class="NavL"></span>
+			   <span class="NavM"><a href="#" hidefocus="true">了解双昌公司</a></span>
+			   <span class="NavR"></span>
+		   </li>
+		</ul>
+	</div>
+	<!-- 导航结束 -->
+	
+	<div id="mainbg">
+		<!-- 主体开始 -->
+		<div id="body" class="fixed">
+			<div id="c_left"></div>
+			<div id="content">
+				<div id="hd" class="ad" style="background-image: url(images/20120911015.jpg); width: 981px; height: 416px; position: relative; background-position: left top;">
+				 <div class="price">
+					 <ul class="price_ul1"><a title="SEV是Search Engine Visibility的缩写，中文意思是搜索引擎可见性。" href="http://www.sev.cn/">SEV</a>,新一代搜索引擎营销.</ul>
+					 <ul class="price_ul2">
+						  <li>SEV是Search Engine Visibility的缩写，中文是搜索引擎可见性。</li>
+						  <li id="icon_new"></li>
+					 </ul>
+					 <ul class="price_ul3">
+						 <li id="textinput"><input type="text" value="查询关键词每天价格" onfocus="javascript:if(this.value=='查询关键词每天价格'){this.value='';}" onblur="javascript:if(this.value==''){this.value='查询关键词每天价格'}" id="Text1"></li>
+						 <li id="btn_search">
+							 <input type="button" onmousedown="javascript:window.location.href = '/SEO/searchresult?keyword=' + escape($('#Text1').val())" value="查询价格" id="Button1"></li>
+					 </ul>
+					 <ul class="price_ul4"></ul>
+					 <ul class="price_ul5">
+					 <li style=" height:20px; color:White; font-size:16px; font-weight:bold; line-height:20px; padding-top:20px; margin-left:60px;">高效球磨机</li>
+					 <li>
+						 <ul style=" float:left; display:inline; width:100px; font-size:22px; margin-left:80px; margin-top:11px; color:White;">8.7</ul>
+						 <ul style=" float:left; width:310px; margin-top:18px;">
+							 <li class="otis">￥<span>13.1</span></li>
+							 <li class="otis">￥<span>3.9</span></li>
+							 <li class="otis">￥<span>2.6</span></li>
+							 <li class="otis">￥<span>1.3</span></li>
+						 </ul>
+						 <ul style=" float:left; width:310px; ">
+							 <li class="tis">8.7</li>
+							 <li class="tis">2.6</li>
+							 <li class="tis">1.7</li>
+							 <li class="tis">0.9</li>
+						 </ul>
+					 </li>
+					 </ul>
+					 <ul class="price_ul6">
+						   <li class="tip_icon1"></li>
+						   <li class="tip_icon2"></li>
+						   <li class="tip_text">关键词价格与该词搜索量,商业价值等因素有关。</li>
+						   <li class="tip_icon3"></li>
+					 </ul>
+					 <ul class="price_ul7"></ul>
+				 </div>
+			   </div>
+			   
+			   <div class="ad2">
+				  <div class="indexHot">
+					<a class="hotNews pngFix a" href="#">
+						<h3 class="m_title">双昌企业标准型</h3>
+						<span class="m_info">按天展示扣费90%稳定性<br/>7*24排名监控</span>
+						<span class="m_fee">RMB￥6600/年</span>
+					</a>
+					<a class="netWork pngFix a" href="#">
+						<h3 class="m_title">营销站点建设</h3>
+						<span class="m_info">专家制定，终身升级<br/>7专业型搜索营销站点</span>
+						<span class="m_fee">RMB ￥5000/年</span>
+					</a>
+					<a class="hotpro pngFix a" href="#">
+						<h3 class="m_title">优化业务转入</h3>
+						<span class="m_info">首页SEO转入优派免开户费<br/>7并享受40%优惠</span>
+						<span class="m_fee">RMB￥600/年</span>
+					</a>
+					<a class="relax pngFix a" href="#">
+						<h3 class="m_title">独立主机</h3>
+						<span class="m_info">SEO网站在优化基础上增加独立IP的<br/>7支持，是网站更具有竞争力！</span>
+						<span class="m_fee">RMB￥300/年</span>
+					</a>
+				  </div>
+				</div>
+				
+				<div id="taocan" class="fixed">
+					<ul class="fixed">
+					  <li>
+						<a target="_blank" href="#">
+						  <img width="129" height="179" src="images/taocan1.jpg">
+						</a>
+						<h3>
+						  <a target="_blank" href="#"/guanjiabaijinjihua_1243/" looyu_bound="1">
+							项目主管亲自把控全局，进行战略规划
+						  </a>
+						</h3>
+					  </li>
+					  <li>
+						<a target="_blank" href="#">
+						  <img width="129" height="179" src="images/taocan2.jpg">
+						</a>
+						<h3>
+						  <a href="#" looyu_bound="1">
+							适合有特定需求的大中型企业
+						  </a>
+						</h3>
+					  </li>
+					  <li>
+						<a target="_blank" href="#">
+						  <img width="129" height="179" src="images/taocan3.jpg">
+						</a>
+						<h3>
+						  <a href="#" looyu_bound="1">
+							微博营销，140字的营销革命
+						  </a>
+						</h3>
+					  </li>
+					  <li>
+						<a target="_blank" href="#">
+						  <img width="129" height="179" src="images/taocan4.jpg">
+						</a>
+						<h3>
+						  <a href="#" looyu_bound="1">
+							提供增值服务
+						  </a>
+						</h3>
+					  </li>
+					  <li class="fright">
+						<a target="_blank" href="#">
+						  <img width="129" height="179" src="images/taocan5.jpg">
+						</a>
+						<h3>
+						  <a href="#" looyu_bound="1">
+							提供增值服务
+						  </a>
+						</h3>
+					  </li>
+					  <div class="clr">
+					  </div>
+					</ul>
+				</div>
+				
+				<!-- 经典案例开始 -->
+				<div class="conC">
+				  <div class="conC_L fl">
+					<img width="148" height="60" src="images/tit_3.jpg">
+				  </div>
+				  <div class="conC_R fr">
+					<a class="prev fl" href="#">
+					</a>
+					<a class="next fr" href="#">
+					</a>
+					<div class="scrollCon fl">
+					  <ul>
+						<li>
+						  <a target="_blank" href="#">
+							<img width="138" height="64" border="0" alt="初见网" src="brands/01.jpg"/>
+						  </a>
+						</li>
+						<li>
+						  <a target="_blank" href="#">
+							<img width="138" height="64" border="0" alt="陕西国源人力资源公司" src="brands/02.jpg"/>
+						  </a>
+						</li>
+						<li>
+						  <a target="_blank" href="#">
+							<img width="138" height="64" border="0" alt="凯瑟琳婚纱摄影" src="brands/03.jpg"/>
+						  </a>
+						</li>
+						<li>
+						  <a target="_blank" href="#">
+							<img width="138" height="64" border="0" alt="非凡饰界" src="brands/04.jpg"/>
+						  </a>
+						</li>
+						<li>
+						  <a target="_blank" href="#">
+							<img width="138" height="64" border="0" alt="海风映像摄影工作室" src="brands/05.jpg"/>
+						  </a>
+						</li>
+						<li>
+						  <a target="_blank" href="#">
+							<img width="138" height="64" border="0" alt="西安上尚汽车音响改装公司" src="brands/06.jpg"/>
+						  </a>
+						</li>
+					  </ul>
+					</div>
+					<script type="text/javascript">
+					  $(function() {
+						$(".scrollCon").jCarouselLite({
+						  btnNext: ".next",
+						  btnPrev: ".prev",
+						  speed: 1000,
+						  auto: 800,
+						  visible: 5
+						});
+					  });
+					</script>
+				  </div>
+				</div>
+				<!-- 经典案例结束 -->
+				
+				<!-- 关键词开始 -->
+				<div class="case">
+					<div style=" width:670px; margin-top:10px; float:left;">
+					  <ul class="mqt">
+						<li style=" margin-top:10px; margin-right:10px;">
+						  <img src="images/Dr.gif">
+						</li>
+						<li style=" font-size:14px; color:#464646; font-weight:bold; margin-top:10px;">
+						  最近上线关键词分享
+						</li>
+						<li style=" margin-top:8px; margin-left:5px;">
+						  <img src="images/3Start.gif">
+						</li>
+						<li style=" margin-top:10px; display:inline; margin-left:360px;">
+						  <img src="images/CL.gif">
+						</li>
+						<li style=" margin-top:10px; display:inline; margin-left:10px;">
+						  <img src="images/CR.gif">
+						</li>
+						<li style=" margin-top:10px; margin-left:10px;">
+						  <a style=" color:#999;" href="#">
+							更多
+						  </a>
+						</li>
+					  </ul>
+					  <div class="bx_wrap">
+						<div class="bx_container" style="position: relative; width: 669px; overflow: hidden;">
+						  <ul id="MainM21Roll" style="width: 999999px; position: relative; left: -223px;">
+							<li style="float: left; list-style: none outside none; margin-right: 0px;">
+							  <ul class="MainM21Roll1">
+								<img src="images/temp2.gif">
+							  </ul>
+							  <ul class="MainM21Roll2">
+								河北雄县长彪制花有限公司
+							  </ul>
+							  <ul class="MainM21Roll3">
+								关 键 词：花圈
+							  </ul>
+							  <ul class="MainM21Roll4">
+								搜索引擎：百度
+							  </ul>
+							  <ul style=" overflow:hidden" class="MainM21Roll4">
+								URL：www.changbiao.net
+							  </ul>
+							</li>
+							<li style="float: left; list-style: none outside none; margin-right: 0px;">
+							  <ul class="MainM21Roll1">
+								<img src="images/temp2.gif">
+							  </ul>
+							  <ul class="MainM21Roll2">
+								温州市龙湾立得达防腐蚀材料
+							  </ul>
+							  <ul class="MainM21Roll3">
+								关 键 词：钢结构防腐涂料
+							  </ul>
+							  <ul class="MainM21Roll4">
+								搜索引擎：百度
+							  </ul>
+							  <ul style=" overflow:hidden" class="MainM21Roll4">
+								URL：www.lideda.cn
+							  </ul>
+							</li>
+							<li style="float: left; list-style: none outside none; margin-right: 0px;">
+							  <ul class="MainM21Roll1">
+								<img src="images/temp2.gif">
+							  </ul>
+							  <ul class="MainM21Roll2">
+								浦江磐石水晶工艺品厂
+							  </ul>
+							  <ul class="MainM21Roll3">
+								关 键 词：水晶工艺品
+							  </ul>
+							  <ul class="MainM21Roll4">
+								搜索引擎：百度
+							  </ul>
+							  <ul style=" overflow:hidden" class="MainM21Roll4">
+								URL：www.panshigy.com
+							  </ul>
+							</li>
+							<li style="float: left; list-style: none outside none; margin-right: 0px;">
+							  <ul class="MainM21Roll1">
+								<img src="images/temp2.gif">
+							  </ul>
+							  <ul class="MainM21Roll2">
+								苏北诚信竹苗
+							  </ul>
+							  <ul class="MainM21Roll3">
+								关 键 词：竹苗
+							  </ul>
+							  <ul class="MainM21Roll4">
+								搜索引擎：百度
+							  </ul>
+							  <ul style=" overflow:hidden" class="MainM21Roll4">
+								URL：www.sbcx1688.com
+							  </ul>
+							</li>
+							<li style="float: left; list-style: none outside none; margin-right: 0px;">
+							  <ul class="MainM21Roll1">
+								<img src="images/temp2.gif">
+							  </ul>
+							  <ul class="MainM21Roll2">
+								欧漫国际婚纱摄影机构
+							  </ul>
+							  <ul class="MainM21Roll3">
+								关 键 词：秦皇岛婚纱摄影工作室
+							  </ul>
+							  <ul class="MainM21Roll4">
+								搜索引擎：百度
+							  </ul>
+							  <ul style=" overflow:hidden" class="MainM21Roll4">
+								URL：www.qhdomhs.com
+							  </ul>
+							</li>
+						  </ul>
+						</div>
+					  </div>
+					</div>
+					<div id="book">
+						<h3>《网站运营研究》免费下载</h3>
+						<p>输入您的E-mail订阅博客电子书<br/>将发送到你的邮箱。</p>
+						<div class="getemail">
+						<form action="" name="mailform" id="mailform" onsubmit="return check()">
+						<input type="text" name="email" id="email" onblur="javascript:if(this.value==''){this.value='您的邮件地址'}" onfocus="javascript:if(this.value=='您的邮件地址'){this.value='';}" value="您的邮件地址"/><input type="submit" id="wd_btn" value=""/>
+						</form>
+						<script type="text/javascript">
+						function check()
+						{
+							var mailform = document.getElementById("mailform");
+							var email = mailform["email"];
+							var regu ="^(([0-9a-zA-Z]+)|([0-9a-zA-Z]+[_.0-9a-zA-Z-]*[0-9a-zA-Z]+))@([a-zA-Z0-9-]+[.])+([a-zA-Z]{2}|net|NET|com|COM|gov|GOV|mil|MIL|org|ORG|edu|EDU|int|INT)$";
+							 var re = new RegExp(regu);
+							 if (re.test(email.value)==true)
+							 {
+								return true;
+							 } 
+							 else 
+							 {
+								email.focus();
+								window.alert("请输入有效合法的E-mail地址");
+								return false;
+							 }
+						}
+						</script>
+						</div>
+					</div>
+				</div>
+				<!-- 关键词结束 -->
+				
+				<!-- 新闻列表开始 -->
+				<div class="conB fixed">
+					<div class="conB_L fl">
+						<div class="conB_Lt">
+						  <h2>
+							<img width="168" height="28" src="images/bg_news_01.jpg">
+						  </h2>
+						  <a target="_blank" href="#" class="More"
+						  looyu_bound="1">
+							查看更多
+						  </a>
+						</div>
+						<ul>
+						  <li>
+							<a href="#" looyu_bound="1">
+							  <img width="48" height="44" class="fl" src="images/tag_2.jpg">
+							</a>
+							<p>
+							  <a href="#" looyu_bound="1">
+								2012-09-26 10:22:49
+							  </a>
+							</p>
+							<p>
+							  <a title="网一管家关于2012中秋、国庆节放假通知" href="#" looyu_bound="1">
+								网一管家关于2012中秋、国庆节放假通知
+							  </a>
+							</p>
+						  </li>
+						  <li>
+							<a href="#" looyu_bound="1">
+							  <img width="48" height="44" class="fl" src="images/tag_2.jpg">
+							</a>
+							<p>
+							  <a href="#" looyu_bound="1">
+								2012-08-01 16:30:43
+							  </a>
+							</p>
+							<p>
+							  <a title="网一管家最新网站隆重上线，版权维护进" href="#" looyu_bound="1">
+								网一管家最新网站隆重上线，版权维护进
+							  </a>
+							</p>
+						  </li>
+						  <li>
+							<a href="#" looyu_bound="1">
+							  <img width="48" height="44" class="fl" src="images/tag_2.jpg">
+							</a>
+							<p>
+							  <a href="#" looyu_bound="1">
+								2012-06-20 15:41:56
+							  </a>
+							</p>
+							<p>
+							  <a title="&lt;strong&gt;网一管家关于2012端午节放假的通知&lt;/strong&gt;" href="#">
+								<strong>
+								  网一管家关于2012端午节放假的通知
+								</strong>
+							  </a>
+							</p>
+						  </li>
+						  <li>
+							<a href="#" looyu_bound="1">
+							  <img width="48" height="44" class="fl" src="images/tag_2.jpg">
+							</a>
+							<p>
+							  <a href="#" looyu_bound="1">
+								2012-06-19 14:47:31
+							  </a>
+							</p>
+							<p>
+							  <a title="西北首家互联网主题咖啡厅入驻西安" href="#" looyu_bound="1">
+								西北首家互联网主题咖啡厅入驻西安
+							  </a>
+							</p>
+						  </li>
+						</ul>
+					</div>
+					<div class="conB_C fl">
+						<div class="conB_Ct">
+						  <h2>
+							<img width="168" height="28" src="images/bg_news_02.jpg">
+						  </h2>
+						  <a target="_blank" href="#" class="More"
+						  looyu_bound="1">
+							查看更多
+						  </a>
+						</div>
+						<div class="b_side_mCon" id="marquee">
+						  <ul style="height: 620px;">
+							<li>
+							  <span>
+								2012-03-26
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								合格的SEO从业人员是怎样
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2011-05-20
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								博客制造话题营销的三个方
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-09-27
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								ICMA国际注册管理会计师就
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2011-03-19
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								博客之谈 十般“武艺”
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-02-01
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								谈谈怎样利用竞争对手做网
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-03-28
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								简单真实的软文写作技巧
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2011-12-26
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								文章浅层化??SEO之另辟蹊
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-02-27
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								中小型企业如何做好营销型
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-04-09
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								博客如何生存，被严重低估
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-04-09
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								网一管家最新客户桂林市海
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-03-26
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								合格的SEO从业人员是怎样
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2011-05-20
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								博客制造话题营销的三个方
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-09-27
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								ICMA国际注册管理会计师就
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2011-03-19
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								博客之谈 十般“武艺”
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-02-01
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								谈谈怎样利用竞争对手做网
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-03-28
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								简单真实的软文写作技巧
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2011-12-26
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								文章浅层化??SEO之另辟蹊
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-02-27
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								中小型企业如何做好营销型
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-04-09
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								博客如何生存，被严重低估
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-04-09
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								网一管家最新客户桂林市海
+							  </a>
+							</li>
+						  </ul>
+						</div>
+					</div>
+					<div class="conB_C fl">
+						<div class="conB_Ct">
+						  <h2>
+							<img width="168" height="28" src="images/bg_news_03.jpg">
+						  </h2>
+						  <a target="_blank" href="#" class="More"
+						  looyu_bound="1">
+							查看更多
+						  </a>
+						</div>
+						<div class="b_side_mCon" id="marquee">
+						  <ul style="height: 620px;">
+							<li>
+							  <span>
+								2012-03-26
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								合格的SEO从业人员是怎样
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2011-05-20
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								博客制造话题营销的三个方
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-09-27
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								ICMA国际注册管理会计师就
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2011-03-19
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								博客之谈 十般“武艺”
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-02-01
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								谈谈怎样利用竞争对手做网
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-03-28
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								简单真实的软文写作技巧
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2011-12-26
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								文章浅层化??SEO之另辟蹊
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-02-27
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								中小型企业如何做好营销型
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-04-09
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								博客如何生存，被严重低估
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-04-09
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								网一管家最新客户桂林市海
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-03-26
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								合格的SEO从业人员是怎样
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2011-05-20
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								博客制造话题营销的三个方
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-09-27
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								ICMA国际注册管理会计师就
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2011-03-19
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								博客之谈 十般“武艺”
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-02-01
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								谈谈怎样利用竞争对手做网
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-03-28
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								简单真实的软文写作技巧
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2011-12-26
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								文章浅层化??SEO之另辟蹊
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-02-27
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								中小型企业如何做好营销型
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-04-09
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								博客如何生存，被严重低估
+							  </a>
+							</li>
+							<li>
+							  <span>
+								2012-04-09
+							  </span>
+							  <a target="_blank" href="#" looyu_bound="1">
+								网一管家最新客户桂林市海
+							  </a>
+							</li>
+						  </ul>
+						</div>
+					</div>
+					
+				</div>
+				<!-- 新闻列表结束 -->
+				
+				<!-- 友情链接开始 -->
+				<div class="flink">
+					<div class="flink_L">
+						<img src="images/bg_flink.jpg" width="70" height="44" alt="" />
+					</div>
+					<div class="flink_R">
+					<ul>
+						<li><a href="#">重庆圣矢网络</a></li>
+						<li><a href="#">重庆圣矢网络</a></li>
+						<li><a href="#">重庆圣矢网络</a></li>
+						<li><a href="#">重庆圣矢网络</a></li>
+						<li><a href="#">重庆圣矢网络</a></li>
+						<li><a href="#">重庆圣矢网络</a></li>
+						<li><a href="#">重庆圣矢网络</a></li>
+						<li><a href="#">重庆圣矢网络</a></li>
+						<li><a href="#">重庆圣矢网络</a></li>
+						<li><a href="#">重庆圣矢网络</a></li>
+					</ul>
+					</div>
+				</div>
+				<!-- 友情链接结束 -->
+				
+				<!-- 底部开始 -->
+				<div id="footer" class="fixed">
+				<ul id="foot">
+					<li>
+						<div style=" width:500px; height:95px; float:left;">
+						  <ul>
+							<li style="clear:both; display:inline; margin-top:30px; margin-left:34px;">
+							  Copyright &copy; 2012 30ie .重庆双昌网络营销策划有限公司 All Rights Reserved.
+							</li>
+							<li style="margin-top:30px;">
+							  <img src="images/f6.gif">
+							</li>
+							<li id="search">
+							  <input type="text" value="重庆双昌网络营销策划有限公司" onfocus="javascript:if(this.value=='重庆双昌网络营销策划有限公司'){this.value='';};" onblur="javascript:if(this.value==''){this.value='重庆双昌网络营销策划有限公司'};" id="search1" name="search1"/>
+							</li>
+							<li>
+							  <input type="button" value="百度一下" id="search_btn" name="search_btn" onclick="baidu()">
+							  <script type="text/javascript">
+							  function baidu()
+							  {
+								var search1 = document.getElementById("search1");
+								window.open("http://www.baidu.com/s?wd="+search1.value,"new");
+							  }
+							  </script>
+							</li>
+						  </ul>
+						</div>
+						<div style="padding-top:35px; height:50px; float:left; margin-left:0px; ">
+						  <!--可信网站图片LOGO安装结束-->
+						  <a target="_blank" alt="315网上交易保障中心" href="http://www.315online.com.cn/member/315120069.html">
+							<img height="42" border="0" src="images/315new.GIF">
+						  </a>
+						  <a target="_blank" alt="12321举报中心" href="http://www.12321.cn/">
+							<img border="0" src="images/friend3.gif">
+						  </a>
+						  <a target="_blank" alt="itrust信用中心" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1583021507">
+							<img height="30" border="0" src="images/friend5.gif">
+						  </a>
+						  <a alt="工信部备案系统认证" target="_blank" href="#">
+							<img height="30px" border="0" src="images/icpba.gif">
+						  </a>
+						  <a alt="合肥工商" target="_blank" href="#">
+							<img height="30px" border="0" src="images/hfgs.gif">
+						  </a>
+						  <!-- 网站统计代码开始 -->
+							 <!--  <script language="JavaScript" src="http://s95.cnzz.com/stat.php?id=4759726&amp;web_id=4759726&amp;show=pic1">
+							  </script> -->
+						  <!-- 网站统计代码结束 -->
+						</div>
+					</li>
+				</ul>
+				</div>
+				<!-- 底部结束 -->
+			</div>
+			<div id="c_right"></div>
+		</div>
+	</div>
+</body>
+</html>
